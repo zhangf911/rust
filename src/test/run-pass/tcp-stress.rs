@@ -13,6 +13,8 @@
 // ignore-openbsd system ulimit (Too many open files)
 // exec-env:RUST_LOG=debug
 
+#![feature(libc, rustc_private, old_io, io, std_misc)]
+
 #[macro_use]
 extern crate log;
 extern crate libc;
